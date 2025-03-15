@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+
+* {
+    font-family: "Vollkorn SC";
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #73020C;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#nav-desk {
+    display: block;
+
+}
+
+nav img {
+    width: 55px;
+}
+
+.nav-link {
+    color: #F4ECCF;
+}
+
+.nav-link:hover {
+    color: #A1554F;
+}
+
+.nav-link:active {
+    color: #A1554F;
+}
+
+.nav-link:focus {
+    color: #A1554F;
+}
+
+
+/* ------- Nav-mobile ------------- */
+
+#nav-mobile{
+    position: fixed;
+    z-index: 900;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.menu-toggle:hover {
+    background-color: transparent;
+}
+
+.menu-toggle:focus {
+    background-color: transparent;
+}
+
+.menu-toggle:focus-visible {
+    background-color: transparent;
+}
+
+#sidebar-wrapper {
+    background-color: #73020C;
+}
+
+
+.sidebar-nav {
+    padding-top: 50px;
+}
+
+
+
+#nav-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #nav-mobile {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+       
+    }
+
+    #nav-link-desk {
+        display: none;
+    }
+
+    nav {
+        justify-content: left;
+        padding-left: 30px;
+    }
+
+
+}
+
+
+/* --------- Carossel ----------- */
+
+
+#carrossel {
+    height: 100%;
+}
+
+.carousel {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    z-index: 100;
+
+    /* Overlay escuro */
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+
+
+.carousel-control-prev {
+    position: absolute;
+    z-index: 100;
+}
+
+
+.carousel-caption {
+
+    z-index: 200;
+}
+
+.carousel-caption h4 {
+    color: #F4ECCF;
+}
+
+.carousel-caption h5 {
+    margin-top: 30px;
+    color: #F4ECCF;
+}
+
+.carousel-caption p {
+    color: #F4ECCF;
+}
+
+
+.carousel-control-next {
+
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* desk */
+
+.img-desk {
+    display: none;
+}
+
+
+/* mobile */
+.img-mobile {
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+    height: 50%;
+    background-color: #73020C;
+    margin: 0px;
+}
+
+@media (min-width: 498px) {
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desk {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 600px){
+    .carousel-caption img{
+        width: 50%;
+    }
+} 
+
+/* Quem somos */
+
+#quem-somos{
+    background-color: #F4ECCF;
+    color: #22441a;
+    font-size: 18px;
+}
+
+#quem-somos a{
+    margin-top: 30px;
+    background-color: #73020C;
+    color: #F4ECCF;
+    border: none;
+}
+
+
+#quem-somos a:hover{
+    margin-top: 30px;
+    background-color: #A1554F;
+    color: #F4ECCF;
+    
+}
+
+/* produtos */
+
+#produtos{
+    background-color: #d1a494;
+    color: #22441a;
+    font-size: 18px;
+}
+
+.portfolio-item:hover .caption {
+    background-color: #73020bde;
+}
+
+.portfolio-item .caption .caption-content {
+    color: #F4ECCF;
+}
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: #73020C;
+}
+
+.footer.footer .social-link {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #d1a494;
+    transition: background-color 0.15s ease-in-out;
+   
+}
+
+footer.footer .social-link:hover {
+    background-color: #A1554F;
+    text-decoration: none;
+}
+
+footer p{
+    color: #F4ECCF;
+}
+
+.text-muted {
+    color: #F4ECCF !important;
+    font-size: 18px;
+}
+
+.text-muted a{
+    color: #F4ECCF !important;
+}
