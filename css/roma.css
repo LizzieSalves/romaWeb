@@ -2,7 +2,12 @@
 
 * {
     font-family: "Vollkorn SC";
-    
+
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
 }
 
 
@@ -45,7 +50,7 @@ nav img {
 
 /* ------- Nav-mobile ------------- */
 
-#nav-mobile{
+#nav-mobile {
     position: fixed;
     z-index: 900;
 }
@@ -90,7 +95,7 @@ nav img {
 
     .menu-toggle {
         display: block;
-       
+
     }
 
     #nav-link-desk {
@@ -201,21 +206,21 @@ hr {
 
 }
 
-@media (max-width: 600px){
-    .carousel-caption img{
+@media (max-width: 600px) {
+    .carousel-caption img {
         width: 50%;
     }
-} 
+}
 
 /* Quem somos */
 
-#quem-somos{
+#quem-somos {
     background-color: #F4ECCF;
     color: #22441a;
     font-size: 18px;
 }
 
-#quem-somos a{
+#quem-somos a {
     margin-top: 30px;
     background-color: #73020C;
     color: #F4ECCF;
@@ -224,25 +229,27 @@ hr {
 }
 
 
-#quem-somos a:hover{
+#quem-somos a:hover {
     margin-top: 30px;
     background-color: #A1554F;
     color: #F4ECCF;
-    transform: scale(1.1); /* Slight zoom effect on hover */
- 
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+
 }
 
 /* produtos */
 
-#produtosServicos{
+#produtosServicos {
     background-color: #d3b0a4;
     color: #22441a;
     font-size: 18px;
 }
 
-.text-secondary{
+.text-secondary {
     color: #73020C !important;
 }
+
 .portfolio-item:hover .caption {
     background-color: #73020bde;
 }
@@ -278,8 +285,8 @@ hr {
     justify-items: center;
     padding-bottom: 50px;
     border-radius: 10px;
-  
-   
+
+
 }
 
 
@@ -294,13 +301,12 @@ form {
     justify-items: center;
 }
 
-span{
+span {
     display: none;
     color: red;
 }
 
-
-#btn-enviar{
+#contato .btn a {
     margin-top: 30px;
     background-color: #73020C;
     color: #F4ECCF;
@@ -309,21 +315,41 @@ span{
 }
 
 
-#btn-enviar:hover {
+#contato .btn a:hover {
     margin-top: 30px;
     background-color: #A1554F;
     color: #F4ECCF;
-    transform: scale(1.1); /* Slight zoom effect on hover */
-  }
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+
+}
+
+
+#btn-enviar {
+    padding: 20px 40px 20px 40px;
+    background-color: #73020C;
+    color: #F4ECCF;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+
+#btn-enviar:hover {
+    background-color: #A1554F;
+    color: #F4ECCF;
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+} 
 
 #url {
     color: #73020C;
     text-decoration: underline;
+    
 }
 
 
 /* Footer */
-.footer{
+.footer {
     background-color: #73020C;
 }
 
@@ -336,7 +362,7 @@ span{
     font-size: 1.5rem;
     background-color: #d1a494;
     transition: background-color 0.15s ease-in-out;
-   
+
 }
 
 footer.footer .social-link:hover {
@@ -344,7 +370,7 @@ footer.footer .social-link:hover {
     text-decoration: none;
 }
 
-footer p{
+footer p {
     color: #F4ECCF;
 }
 
@@ -353,6 +379,6 @@ footer p{
     font-size: 18px;
 }
 
-.text-muted a{
+.text-muted a {
     color: #F4ECCF !important;
 }
